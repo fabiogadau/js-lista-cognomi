@@ -10,7 +10,9 @@ btnAggiungi.addEventListener('click',
   // INSERIRLO IN UN ARRAY CONTENENTE ALTRI COGNOMI
   function() {
     lista.push(cognomi.value);
+    console.log(lista)
     lista.sort();
+    console.log(lista)
 
     // STAMPARE LA LISTA ORDINATA ALFABETICAMENTE
     // STAMPARE LA POSIZIONE DEL NUOVO UTENTE NELLA LISTA
@@ -18,7 +20,7 @@ btnAggiungi.addEventListener('click',
     for (i = 0; i < lista.length; i++) {
       items += '<li>' + lista[i] + '</li>';
 
-      listaCognomi.innerHTML = items + 'La posizione del tuo cognome nella lista è: ' + lista.indexOf(cognomi);
+      listaCognomi.innerHTML = items + 'La posizione del tuo cognome nella lista è: ' + lista.indexOf(cognomi.value);
     }
   }
 );
