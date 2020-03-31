@@ -22,5 +22,9 @@ btnAggiungi.addEventListener('click',
 
       listaCognomi.innerHTML = items + 'La posizione del tuo cognome nella lista è: ' + lista.indexOf(cognomi.value);
     }
+
+    // AZZERARE L'INPUT
+    cognomi.value = '';
+    cognomi.focus();
   }
 );

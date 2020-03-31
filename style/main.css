@@ -7,4 +7,58 @@
 body {
   font-family: 'Baloo 2', cursive;
   font-size: 16px;
+  background-color: #0074c0;
+  color: lightgrey;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  font-family: 'Baloo 2', cursive;
+  font-size: 16px;
+  padding: 15px 20px;
+  background-color: #00c04c;
+  border: 2px solid rgb(0, 192, 55);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(0, 192, 76, .7)
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0 5px 5px;
+  font-family: 'Baloo 2', cursive;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  background-color: #f9c70e;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
 }
